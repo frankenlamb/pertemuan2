@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+    <form>
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama" required/> <br/>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" /> <br/>
+
+        <label for="jenis_kelamin">Jenis Kelamin</label>
+        <input type="radio" name="jenis_kelamin" value="Laki-Laki" />
+        Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" />
+        Perempuan <br/>
+
+        <label for="nama_pelatihan">Nama Pelatihan</label> <br/>
+        <input type="checkbox" name="nama_pelatihan[]" value="HTML" /> HTML <br/>
+        <input type="checkbox" name="nama_pelatihan[]" value="CSS" /> CSS <br/>
+        <input type="checkbox" name="nama_pelatihan[]" value="SQL" /> SQL <br/>
+        <input type="checkbox" name="nama_pelatihan[]" value="Java" /> Java <br/>
+        
+        <label for="email">E-Mail:</label> <br/>
+        <input type="email" name="email" id="email" /> <br/>
+
+        <label for="kewarganegaraan">Kewarganegaraan</label> 
+        <select name="kewarganegaraan" id="kewarganegaraan"> 
+            <option value="German">German</option>
+            <option value="Malay">Malay</option>
+            <option value="Indoneasia">Indonesia</option>
+        </select> <br/>
+        <!-- atribut placeholder untuk tulisan invisible yang nanti terganti -->
+    </form>
+</body>
+</html>
